@@ -7,4 +7,12 @@ angular
       { name: "Caleb", age: 10 },
       { name: "Greg", age: 48 }
     ];
+
+    $scope.addPerson = () => {
+      if ($scope.name && $scope.age) {
+        $scope.list.push({ name: $scope.name, age: $scope.age });
+        $scope.name = "";
+        $scope.age = "";
+      }
+    };
   });
