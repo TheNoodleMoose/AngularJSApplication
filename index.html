@@ -7,15 +7,16 @@
     <title>AngularJS Practice</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
     <script src="directory.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body ng-controller="directoryController as dirList">
     <input type="text" ng-model="search" />
     <ul>
       <li
-        ng-repeat="person in dirList.list | filter: search 
-        | orderBy: 'age'| limitTo: 4"
+        ng-repeat="person in dirList.list | filter: search"
+        ng-class="{'over-thirty': person.age > 30}"
       >
-        {{ person.name | lowercase }}: <em>{{ person.age }}</em>
+        {{ person.name }}: <em>{{ person.age }}</em>
       </li>
     </ul>
     <form ng-submit="dirList.addPerson()">
