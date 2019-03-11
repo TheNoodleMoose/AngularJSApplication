@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body ng-controller="directoryController as dirList">
+    <h1>AngularJS Github Search</h1>
     <!-- This input is our search model, used for filtering our people -->
-    <input type="text" ng-model="search" />
+    <input type="text" ng-model="search" placeholder="Search For User" />
     <ul class="list-container">
       <!-- This list repeats for each person in our list and filters from our search model -->
       <!-- We then use a ternary expersion to give a class depending on person's age -->
@@ -27,12 +28,15 @@
     <!-- When our form is sumbitted, run our addPerson() function -->
     <form ng-submit="dirList.addPerson()">
       <input type="text" placeholder="Name" ng-model="dirList.name" />
+      <br />
       <input type="number" placeholder="Age" ng-model="dirList.age" />
+      <br />
       <input
         type="text"
         placeholder="GitHub Username"
         ng-model="dirList.userName"
       />
+      <br />
       <input type="submit" value="Submit" />
     </form>
   </body>

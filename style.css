@@ -1,13 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+body {
+  background: #eee5e9;
+  color: #7c7c7c;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 .over-thirty {
-  background: red;
-  color: white;
+  background: #d64933;
+  color: #eee5e9;
   border-radius: 10px;
 }
 
 .under-thirty {
-  background: blue;
-  color: white;
+  background: #92dce5;
+  color: #7c7c7c;
   border-radius: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 ul {
   list-style: none;
@@ -32,6 +45,10 @@ li span {
   margin-right: 10px;
 }
 
-#github {
-  fill: white;
+.under-thirty #github {
+  fill: #7c7c7c;
+}
+
+.over-thirty #github {
+  fill: #eee5e9;
 }
