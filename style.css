@@ -28,3 +28,10 @@ li img {
   height: 50px;
   margin: 10px;
 }
+li span {
+  margin-right: 10px;
+}
+
+#github {
+  fill: white;
+}
