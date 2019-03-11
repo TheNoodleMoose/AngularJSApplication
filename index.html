@@ -10,8 +10,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body ng-controller="directoryController as dirList">
+    <!-- This input is our search model, used for filtering our people -->
     <input type="text" ng-model="search" />
     <ul class="list-container">
+      <!-- This list repeats for each person in our list and filters from our search model -->
+      <!-- We then use a ternary expersion to give a class depending on person's age -->
+      <!-- We include a template for our list of people from person.html -->
       <li
         ng-repeat="person in dirList.list | filter: search"
         ng-class="person.age > 29 ? 'over-thirty': 'under-thirty'"
@@ -19,6 +23,8 @@
         src="'person.html'"
       ></li>
     </ul>
+    <!-- This is a form for adding people to our list -->
+    <!-- When our form is sumbitted, run our addPerson() function -->
     <form ng-submit="dirList.addPerson()">
       <input type="text" placeholder="Name" ng-model="dirList.name" />
       <input type="number" placeholder="Age" ng-model="dirList.age" />

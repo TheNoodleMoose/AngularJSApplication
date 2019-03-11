@@ -2,7 +2,7 @@ angular
   .module("directoryApp", [])
   .controller("directoryController", function() {
     const dirList = this;
-
+    // This is our list of people, each has a name, age, and img
     dirList.list = [
       {
         name: "Christian",
@@ -28,10 +28,11 @@ angular
         img: "https://randomuser.me/api/portraits/men/36.jpg"
       }
     ];
-
+    // This function takes our inputs submitted by the users and pushes them to our dirList.list
     dirList.addPerson = () => {
       if (dirList.name && dirList.age) {
         dirList.list.push({ name: dirList.name, age: dirList.age });
+        // After the users sumbits and we push to our list, reset input fields back to empty
         dirList.name = "";
         dirList.age = "";
       }
