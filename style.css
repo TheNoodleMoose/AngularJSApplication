@@ -11,6 +11,11 @@ body {
   font-weight: bold;
   margin-bottom: 10px;
 }
+.add-user {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
 .over-thirty {
   background: #d64933;
