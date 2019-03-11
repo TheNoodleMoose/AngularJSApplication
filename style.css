@@ -6,6 +6,12 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .over-thirty {
   background: #d64933;
   color: #eee5e9;

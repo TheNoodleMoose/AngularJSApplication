@@ -7,10 +7,11 @@
     <title>AngularJS Practice</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
     <script src="directory.js"></script>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body ng-controller="directoryController as dirList">
-    <h1>AngularJS Github Search</h1>
+    <h1 class="title">AngularJS Github Search</h1>
     <!-- This input is our search model, used for filtering our people -->
     <input type="text" ng-model="search" placeholder="Search For User" />
     <ul class="list-container">
