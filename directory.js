@@ -1,5 +1,5 @@
 angular
-  .module("directoryApp", [])
+  .module("directoryApp", ["ngAnimate"])
   .controller("directoryController", function($q) {
     const dirList = this;
     // This is our list of people, each has a name, age, and img
