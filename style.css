@@ -4,6 +4,9 @@ body {
   background: #eee5e9;
   color: #7c7c7c;
   font-family: "Roboto Condensed", sans-serif;
+  max-width: 960px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .title {
@@ -44,6 +47,7 @@ li {
   flex-direction: row;
   align-items: center;
   margin-bottom: 10px;
+  animation: fadeIn 0.2s linear;
 }
 
 li img {
@@ -62,4 +66,13 @@ li span {
 
 .over-thirty #github {
   fill: #eee5e9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
